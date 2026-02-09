@@ -1,104 +1,65 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Animated background */
 body {
-  display: flex;
-  background: #f4f6f9;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 220px;
   height: 100vh;
-  background: #1e293b;
-  color: #fff;
-  padding: 20px;
-}
-
-.sidebar h2 {
-  margin-bottom: 30px;
-}
-
-.sidebar a {
-  display: block;
-  color: #cbd5e1;
-  text-decoration: none;
-  padding: 10px;
-  margin: 8px 0;
-  border-radius: 5px;
-}
-
-.sidebar a:hover,
-.sidebar .active {
-  background: #2563eb;
-  color: #fff;
-}
-
-.logout {
-  margin-top: 30px;
-  background: #ef4444;
-  color: white !important;
-}
-
-/* Main */
-.main {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Topbar */
-.topbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #4f46e5, #06b6d4, #22c55e, #f97316);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Login box */
+.login-container {
+  background: white;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-container h2 {
   margin-bottom: 20px;
+  color: #1e293b;
 }
 
-/* Cards */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card h3 {
-  color: #64748b;
-}
-
-.card p {
-  font-size: 28px;
-  margin-top: 10px;
-  color: #2563eb;
-}
-
-/* Table */
-.table-box {
-  margin-top: 30px;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-table {
+.login-container input {
   width: 100%;
-  border-collapse: collapse;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
 }
 
-th, td {
-  padding: 10px;
-  border-bottom: 1px solid #e5e7eb;
-  text-align: left;
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-th {
-  background: #f1f5f9;
+.login-container button:hover {
+  background: #1d4ed8;
+}
+
+#error {
+  color: red;
+  margin-top: 10px;
 }
