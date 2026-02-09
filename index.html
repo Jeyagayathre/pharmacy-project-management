@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Pharmacy Login</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h2>Pharmacy Management System</h2>
+  <div class="login-container">
+    <h2>Pharmacy Management System</h2>
 
-<input type="text" id="username" placeholder="Username">
-<input type="password" id="password" placeholder="Password">
-<button onclick="login()">Login</button>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
 
-<script src="js/login.js"></script>
+    <button onclick="login()">Login</button>
+    <p id="error"></p>
+  </div>
+
+  <script src="js/login.js"></script>
 </body>
 </html>
