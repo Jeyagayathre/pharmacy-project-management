@@ -1,65 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Animated background */
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(-45deg, #4f46e5, #06b6d4, #22c55e, #f97316);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
 }
 
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+.container {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 5px;
 }
 
-/* Login box */
-.login-container {
-  background: white;
-  padding: 30px;
-  width: 350px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
 }
 
-.login-container h2 {
-  margin-bottom: 20px;
-  color: #1e293b;
+button {
+    padding: 8px 15px;
+    cursor: pointer;
 }
 
-.login-container input {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 6px;
-  border: 1px solid #cbd5e1;
+.menu a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 10px;
 }
 
-.login-container button {
-  width: 100%;
-  padding: 12px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.login-container button:hover {
-  background: #1d4ed8;
-}
-
-#error {
-  color: red;
-  margin-top: 10px;
-}
