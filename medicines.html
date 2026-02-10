@@ -1,10 +1,19 @@
-<h2>Medicine Management</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Medicine Management</h2>
 
-<input type="text" id="mname" placeholder="Medicine Name">
-<input type="number" id="price" placeholder="Price">
-<input type="number" id="qty" placeholder="Quantity">
-<button onclick="addMedicine()">Add Medicine</button>
+    <input type="text" id="medicineName" placeholder="Medicine Name">
+    <input type="number" id="medicineQty" placeholder="Quantity">
+    <button onclick="addMedicine()">Add</button>
 
-<ul id="list"></ul>
+    <ul id="medicineList"></ul>
 
-<script src="../js/medicines.js"></script>
+    <script src="medicines.js"></script>
+</body>
+</html>
