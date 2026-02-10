@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Pharmacy Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Title -->
+    <h1 class="main-title">Pharmacy Management System</h1>
+
+    <!-- Login Box -->
     <div class="container">
-        <h2>Login</h2>
+        <h2>User Login</h2>
+
         <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
+
         <button onclick="login()">Login</button>
+
+        <p class="hint">
+            Username: <b>malar</b><br>
+            Password: <b>1234</b>
+        </p>
+
         <p id="error"></p>
     </div>
 
