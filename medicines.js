@@ -1,9 +1,17 @@
 function addMedicine() {
-  let name = mname.value;
-  let price = price.value;
-  let qty = qty.value;
+    const name = document.getElementById("medicineName").value;
+    const qty = document.getElementById("medicineQty").value;
+    const list = document.getElementById("medicineList");
 
-  let li = document.createElement("li");
-  li.innerText = name + " - Rs." + price + " - Qty: " + qty;
-  document.getElementById("list").appendChild(li);
+    if (name === "" || qty === "") {
+        alert("Please enter all details");
+        return;
+    }
+
+    const li = document.createElement("li");
+    li.textContent = `${name} - Quantity: ${qty}`;
+    list.appendChild(li);
+
+    document.getElementById("medicineName").value = "";
+    document.getElementById("medicineQty").value = "";
 }
