@@ -1,77 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pharmacy Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2> Pharmacy</h2>
-    <a href="dashboard.html" class="active">Dashboard</a>
-    <a href="pages/medicines.html">Medicines</a>
-    <a href="pages/sales.html">Sales</a>
-    <a href="pages/stock.html">Stock</a>
-    <a href="pages/reports.html">Reports</a>
-    <a href="index.html" class="logout">Logout</a>
-  </div>
-
-  <!-- Main Content -->
-  <div class="main">
-    <div class="topbar">
-      <h1>Dashboard</h1>
-      <p>Welcome, Admin</p>
+    <h2>Dashboard</h2>
+    <div class="menu">
+        <a href="medicines.html">Medicine Management</a>
+        <a href="sales.html">Sales</a>
+        <a href="index.html">Logout</a>
     </div>
-
-    <!-- Cards -->
-    <div class="cards">
-      <div class="card">
-        <h3>Total Medicines</h3>
-        <p id="medCount">120</p>
-      </div>
-
-      <div class="card">
-        <h3>Today's Sales</h3>
-        <p>₹ 8,500</p>
-      </div>
-
-      <div class="card">
-        <h3>Low Stock</h3>
-        <p>6 Items</p>
-      </div>
-
-      <div class="card">
-        <h3>Expired</h3>
-        <p>2 Items</p>
-      </div>
-    </div>
-
-    <!-- Table -->
-    <div class="table-box">
-      <h2>Recent Sales</h2>
-      <table>
-        <tr>
-          <th>Medicine</th>
-          <th>Qty</th>
-          <th>Amount</th>
-        </tr>
-        <tr>
-          <td>Paracetamol</td>
-          <td>5</td>
-          <td>₹250</td>
-        </tr>
-        <tr>
-          <td>Cetrizine</td>
-          <td>3</td>
-          <td>₹180</td>
-        </tr>
-      </table>
-    </div>
-
-  </div>
-
-  <script src="js/dashboard.js"></script>
 </body>
 </html>
