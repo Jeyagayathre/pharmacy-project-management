@@ -6,11 +6,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Dashboard</h2>
-    <div class="menu">
-        <a href="medicines.html">Medicine Management</a>
-        <a href="sales.html">Sales</a>
-        <a href="index.html">Logout</a>
+
+    <h1 class="main-title">Admin Dashboard</h1>
+
+    <div class="dashboard">
+        <div class="card delay1" onclick="location.href='medicines.html'">
+            <h2>Medicine Management</h2>
+            <p>Add / View Medicines</p>
+        </div>
+
+        <div class="card delay2" onclick="location.href='sales.html'">
+            <h2>Sales</h2>
+            <p>Calculate Sales</p>
+        </div>
+
+        <div class="card delay3">
+            <h2>Stock</h2>
+            <p>Check Stock Details</p>
+        </div>
+
+        <div class="card delay4">
+            <h2>Reports</h2>
+            <p>Daily / Monthly Reports</p>
+        </div>
+
+        <div class="card logout delay5" onclick="location.href='index.html'">
+            <h2>Logout</h2>
+        </div>
     </div>
+
 </body>
 </html>
