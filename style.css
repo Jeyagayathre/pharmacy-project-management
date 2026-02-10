@@ -1,34 +1,67 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
     text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    animation: bgChange 10s infinite alternate;
 }
 
+/* Background auto color */
+@keyframes bgChange {
+    0% { background-color: #ffdde1; }
+    50% { background-color: #c2e9fb; }
+    100% { background-color: #d4fc79; }
+}
+
+/* Main title */
+.main-title {
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Login box */
 .container {
     background: white;
-    padding: 20px;
-    width: 300px;
-    margin: 100px auto;
-    border-radius: 5px;
+    width: 320px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.container h2 {
+    margin-bottom: 15px;
 }
 
 input {
     width: 90%;
-    padding: 8px;
-    margin: 8px 0;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 button {
-    padding: 8px 15px;
-    cursor: pointer;
-}
-
-.menu a {
-    display: block;
-    margin: 10px;
-    text-decoration: none;
-    color: white;
-    background: #007bff;
+    width: 95%;
     padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+button:hover {
+    background: #0056b3;
+}
+
+.hint {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
